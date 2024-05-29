@@ -1,0 +1,636 @@
+/*======================================================= Variables =======================================================*/
+:root {
+    --first-color: #0B132A;
+    --sec-color: #4F5665;
+    --red-color: #F53838;
+    --padding-top: 120px;
+    --padding-bottom: 120px;
+}
+
+/*======================================================= Global =======================================================*/
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+
+
+/*======================================================= Buttons =======================================================*/
+.button {
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 60px;
+    background-color: var(--red-color);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.button-outline-rounded,
+.button-rounded {
+    border: 2px solid var(--red-color);
+    background: none;
+    border-radius: 50px;
+    outline: none;
+    width: 178px;
+    height: 45px;
+    color: var(--red-color);
+    transition: 0.5s ease;
+}
+
+a .button-outline-rounded,
+a .button-rounded {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.button-rounded {
+    border: none;
+    background-color: var(--red-color);
+    transition: 0.5s ease-in;
+    color: #fff;
+}
+
+.button-rounded a {
+    color: #fff;
+}
+
+.button:hover,
+.button-rounded:hover {
+    box-shadow: 0px 10px 20px rgba(245, 56, 56, 0.35);
+}
+
+.button-outline-rounded:hover {
+    background-color: var(--red-color);
+    color: #fff;
+}
+
+
+
+
+/*======================================================= Sections Header =======================================================*/
+
+.section-header {
+    padding: 80px 0 60px;
+
+}
+
+.section-header h2 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    padding-bottom: 20px;
+    color: var(--first-color);
+}
+
+.section-header p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--sec-color);
+}
+
+
+
+/*======================================================= Icons =======================================================*/
+.icons,
+.icons-2 {
+    color: #2FAB73;
+    padding-right: 13px;
+}
+
+.icons-2 {
+    padding-right: 26px;
+}
+
+
+
+/*======================================================= Navbar =======================================================*/
+.navbar {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #fff;
+}
+
+.navbar-brand h3 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 8px;
+    color: var(--first-color);
+    margin-left: 10px;
+}
+
+.navbar-brand h3 span {
+    font-weight: 700;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 40px;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+
+.nav-buttons .sign-in {
+    margin-right: 30px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.nav-buttons .sign-in a {
+    color: var(--first-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.nav-buttons .sign-up {
+    border: 1px solid var(--red-color);
+    border-radius: 50px;
+    outline: none;
+    background: none;
+    width: 150px;
+    height: 45px;
+    color: var(--red-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    transition: 0.5s ease;
+}
+
+.nav-buttons .sign-up:hover {
+    background-color: var(--red-color);
+    color: #fff;
+}
+
+/*======================================================= Heading Section =======================================================*/
+#heading {
+    padding-bottom: calc(var(--padding-bottom) + 80px);
+    padding-top: var(--padding-top);
+}
+
+.header-text h1 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+    color: var(--first-color);
+    padding-bottom: 20px;
+}
+
+.header-text h1 span {
+    font-weight: 700;
+}
+
+.header-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--sec-color);
+    padding-bottom: 50px;
+}
+
+
+/*======================================================= Floating Section =======================================================*/
+
+.floating-section {
+    width: 1140px;
+    height: 200px;
+    z-index: 10000;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 50px 60px rgba(13, 16, 37, 0.1);
+}
+
+.part-circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 70px;
+    background-color: #FFECEC;
+    margin-right: 36.5px;
+}
+
+.part-circle i {
+    color: #F53838;
+    font-size: 20px;
+}
+
+.part .part-text h3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--first-color);
+}
+
+.part .part-text p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--sec-color);
+}
+
+.stick {
+    width: 2px;
+    height: 126px;
+    background-color: #EEEEF2;
+}
+
+/*======================================================= Features Section =======================================================*/
+#features {
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+}
+
+.features-text h1 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    color: var(--first-color);
+}
+
+.features-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--sec-color);
+    padding-top: 20px;
+}
+
+.features-list-item {
+    padding-top: 15px;
+    line-height: 30px;
+    color: var(--sec-color);
+    ;
+}
+
+
+
+/*======================================================= Pricing Section =======================================================*/
+#pricing {
+    background-color: #F6F6F6;
+}
+
+
+
+.card {
+    width: 330px;
+    height: 760px;
+    border-color: #DDDDDD;
+    border-radius: 10px;
+    border-width: 2px;
+    padding-top: 80px;
+}
+
+.card img {
+    width: 90px;
+}
+
+.card .card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--first-color);
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.card .card-body .card-text ul li {
+    padding-top: 10px;
+    color: var(--sec-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.cr-footer {
+    margin-top: 130px;
+}
+
+.cr-footer-2 {
+    margin-top: 90px;
+}
+
+.cr-footer-3 {
+    margin-top: 50px;
+}
+
+.cr-footer h3,
+.cr-footer-2 h3,
+.cr-footer-3 h3 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+
+.cr-footer-2 h3 span,
+.cr-footer-3 h3 span {
+    color: var(--sec-color);
+    font-weight: 400;
+}
+
+
+
+
+/*======================================================= Global Section =======================================================*/
+#global {
+    background-color: #F6F6F6;
+}
+
+.global-p-span {
+    font-weight: 500;
+}
+
+.global-users {
+    margin-top: 35px;
+}
+
+/*======================================================= testimonial =======================================================*/
+#testimonial {
+    background-color: #F6F6F6;
+    padding-bottom: var(--padding-bottom);
+}
+
+.testimonial {
+    width: 400px;
+    height: auto;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+}
+
+.testimonial.active {
+    border-color: var(--red-color);
+}
+
+.testimonial-body {
+    margin: 30px;
+}
+
+.testimonial-header {
+    padding-bottom: 20px;
+}
+
+.testimonial-header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+
+.testimonial-header .ne__cy p {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--first-color);
+    line-height: 30px;
+    margin-bottom: 0;
+    padding-right: 80px;
+}
+
+.testimonial-header .ne__cy p span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--sec-color);
+}
+
+
+.star p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--first-color);
+    padding-right: 11px;
+    margin-bottom: 0;
+}
+
+.star i {
+    color: #FEA250;
+    width: 13px;
+    height: 12px;
+}
+
+.testimonial-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--first-color);
+    margin-bottom: 0;
+}
+
+
+.testimonial-buttons {
+    margin-top: 120px;
+}
+
+.left-buttons div {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.left-buttons div:first-child {
+    height: 15px;
+    width: 50px;
+    border-radius: 555px;
+    background-color: var(--red-color);
+}
+
+.left-buttons div:nth-child(2),
+.left-buttons div:nth-child(3),
+.left-buttons div:last-child {
+    height: 15px;
+    width: 15px;
+    border-radius: 555px;
+    background-color: #DDE0E4;
+    transition: 0.3s ease;
+}
+
+.left-buttons div:nth-child(2):hover,
+.left-buttons div:nth-child(3):hover,
+.left-buttons div:last-child:hover {
+    background-color: var(--red-color);
+}
+
+.right-buttons div {
+    cursor: pointer;
+}
+
+
+.right-buttons div:first-child {
+    width: 60px;
+    height: 60px;
+    border-radius: 555px;
+    border: 2px solid var(--red-color);
+    color: var(--red-color);
+    margin-right: 20px;
+    transition: 0.3s ease;
+}
+
+.right-buttons div:first-child:hover {
+    background-color: var(--red-color);
+    color: #fff;
+}
+
+.right-buttons div:last-child {
+    width: 60px;
+    height: 60px;
+    border-radius: 555px;
+    background-color: var(--red-color);
+    color: #fff;
+}
+
+
+
+.right-buttons div i {
+    font-size: 20px;
+}
+
+
+/*======================================================= Subscribe =======================================================*/
+.sub-text h3 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 45px;
+    color: var(--first-color);
+}
+
+.sub-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--sec-color);
+    margin-bottom: 0;
+}
+
+/*======================================================= Footer =======================================================*/
+#footer {
+    background-color: #f8f8f8;
+    padding-top: calc(var(--padding-top) + 50px);
+    padding-bottom: var(--padding-bottom);
+}
+
+.footer__text__start {
+    margin-bottom: 20px;
+}
+
+.footer__text__start img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.footer__text__start h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--first-color);
+    margin-top: 8px;
+}
+
+.footer__text__start h3 span {
+    font-weight: 700;
+}
+
+.footer__text__mid {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--sec-color);
+    margin-bottom: 30px;
+}
+
+.footer__text__mid span {
+    font-weight: 500;
+}
+
+.footer__social {
+    margin-bottom: 30px;
+}
+
+.social__circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: var(--red-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social__circle:not(:last-child) {
+    margin-right: 20px;
+}
+
+.social__circle:hover {
+    color: #fff;
+    background-color: var(--red-color);
+}
+
+
+
+
+
+
+
+.footer__text__end h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #AFB5C0;
+}
+
+.footer__text__end h3 span {
+    font-weight: 500;
+}
+
+.footer__links ul li:first-child {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--first-color);
+    padding-bottom: 20px;
+    cursor: text;
+}
+
+.footer__links ul li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--sec-color);
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer__links ul li:hover {
+    color: var(--first-color);
+}
